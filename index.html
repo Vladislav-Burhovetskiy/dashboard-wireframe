@@ -7,14 +7,32 @@
     <body>
         <main>    
             <div class="top">
-                <div id="crypto">
-                    <div id="crypto-top"></div>
+                <div id="rate">
+                    <div id="rate-top"></div>
+                    <div id="rate-exchange">
+                      <input type="number" id="rate-amount" placeholder="0">
+                      <select id="rate-select-from">
+                        <option value="USD" selected>USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="UAH">UAH</option>
+                      </select>
+                      <select id="rate-select-to">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="UAH" selected>UAH</option>
+                      </select>
+                      <button id="rate-equal-btn">=</button>
+                      <p id="rate-exchange-result"></p>
+                    </div>
                 </div>
                 <div id="weather"></div>
             </div>
             
             <h1 id="time" class="time"></h1>
-            <p id="author"></p>
+            <div class="author-container">
+              <img src="./assets/user_location.png">
+              <p id="author"></p>
+            </div>
         </main>
         <script src="index.js"></script>
     </body>

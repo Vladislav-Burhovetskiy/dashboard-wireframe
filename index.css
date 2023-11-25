@@ -1,6 +1,6 @@
 * {
-    box-sizing: border-box;
-}    
+  box-sizing: border-box;
+}
 
 body,
 h1,
@@ -17,49 +17,119 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 body {
-    margin: 0;
-    background: no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 1px 1px 2px #242424;
+  margin: 0;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 2px #242424;
 }
 
 main {
-    padding: 15px 20px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding: 15px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 div.top {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
+
+
 h1.time {
-    font-size: 2.5rem;
-    text-align: center;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  margin: 0 auto;
+  width: 380px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2px solid rgba(255,255,255,.5);
+  box-shadow: 1px 1px 0px rgba(255,255,255,.5);
+  border-radius: 25px;
+}
+
+#search-query {
+  border-style: none;
+  padding: 15px 25px;
+  padding-right: 12px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+form:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, .8);
+  box-shadow: 1px 1px 2px rgba(255,255,255,.8);
+}
+
+#search-query::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+#search-query {
+  width: 320px;
+  background-color: transparent;
+}
+
+#search-btn {
+  margin-right: 25px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  outline: unset;
+  cursor: pointer;
+}
+
+#search-btn img{
+  width: 30px;
+  height: 30px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("./assets/Orion_cancel.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
 }
 
 div#rate {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 div#rate > p {
-    margin: 0;
+  margin: 0;
 }
 
 div#rate-top {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 div#rate-top > span {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 #rate-exchange {
@@ -108,30 +178,30 @@ div#rate-top > span {
 }
 
 div#weather {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-self: flex-start;
-    margin-top: -20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-self: flex-start;
+  margin-top: -20px;
 }
 
 div#weather > img {
-    width: 70px;
+  width: 70px;
 }
 
 p.weather-city {
-    width: 100%;
-    text-align: right;
-    font-size: 1.2rem;
-    margin: 0;
-    margin-top: -15px;
+  width: 100%;
+  text-align: right;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-top: -15px;
 }
 
 p.weather-temp {
-    margin: 0;
-    font-size: 1.7rem;
-    margin-left: -5px;
+  margin: 0;
+  font-size: 1.7rem;
+  margin-left: -5px;
 }
 
 #author {

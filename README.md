@@ -1,4 +1,4 @@
-# Dashboard wireframe [DEMOLINK](https://vladislav-burhovetskiy.github.io/homepage/)
+# Dashboard wireframe [DEMOLINK](https://vladislav-burhovetskiy.github.io/dashboard-wireframe/)
 Dashboard wireframe is an extension for Google chrome. Every time I open a new tab, I see a page I created for myself with the following functionality:
 1. Exchange rate and converter;
 2. Current state of the weather;

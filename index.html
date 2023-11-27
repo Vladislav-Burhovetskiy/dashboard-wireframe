@@ -1,60 +1,73 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="index.css">
-        <title>Personal Dashboard</title>
-    </head>
-    <body>
-        <main>    
-            <div class="top">
-                <div id="rate">
-                    <div id="rate-top"></div>
-                    <div id="rate-exchange">
-                      <input type="number" id="rate-amount" placeholder="0">
-                      <select id="rate-select-from">
-                        <option value="USD" selected>USD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="UAH">UAH</option>
-                      </select>
-                      <select id="rate-select-to">
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="UAH" selected>UAH</option>
-                      </select>
-                      <button id="rate-equal-btn">=</button>
-                      <p id="rate-exchange-result"></p>
-                    </div>
-                </div>
-                <div id="weather"></div>
-            </div>
-            <div id="center">
-              <h1 id="time" class="time"></h1>
-              <form role="search" id="search-form">
-                <input type="search" id="search-query" name="query" placeholder="Search...">
-                <button id="search-btn">
-                  <img src="./assets/Orion_search-find.png" alt="Search button">
-                </button>
-              </form>
-            </div>
-            <div class="bottom">
-              <div class="author-container">
-                <img src="./assets/user_location.png">
-                <p id="author"></p>
-              </div>
-              <div class="text-container">
-                <ol class="text-list"></ol>
-                <div class="text">
-                  <input type="text" class="text-box" />
-                  <button class="text-add-btn">
-                    <img src="./assets/Orion_add.png" class="text-add-icon">
-                  </button>
-                  <button class="text-open-btn">
-                    <img src="./assets/Orion_angle-circle.png" class="text-open-icon">
-                  </button>
-                </div>
-              </div>
-              </div>
-        </main>
-        <script src="index.js"></script>
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Personal Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <section class="top">
+        <div id="rate">
+          <div id="rate-top"></div>
+          <div id="rate-exchange">
+            <input type="number" id="rate-amount" placeholder="0" />
+            <select id="rate-select-from">
+              <option value="USD" selected>USD</option>
+              <option value="EUR">EUR</option>
+              <option value="UAH">UAH</option>
+            </select>
+            <select id="rate-select-to">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="UAH" selected>UAH</option>
+            </select>
+            <button id="rate-equal-btn">=</button>
+            <p id="rate-exchange-result"></p>
+          </div>
+        </div>
+        <div id="weather"></div>
+      </section>
+      <section class="center">
+        <h1 id="time" class="time"></h1>
+        <form role="search" id="search-form">
+          <input
+            type="search"
+            id="search-query"
+            name="query"
+            placeholder="Search..."
+          />
+          <button id="search-btn">
+            <img src="./assets/Orion_search-find.png" alt="Search button" />
+          </button>
+        </form>
+      </section>
+      <section class="bottom">
+        <div class="author-container">
+          <img src="./assets/user_location.png" />
+          <p id="author"></p>
+        </div>
+        <div class="text-container">
+          <ol class="text-list"></ol>
+          <div class="text">
+            <input type="text" class="text-box" />
+            <button class="text-add-btn">
+              <img src="./assets/Orion_add.png" class="text-add-icon" />
+            </button>
+            <button class="text-open-btn">
+              <img
+                src="./assets/Orion_angle-circle.png"
+                class="text-open-icon"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
 </html>

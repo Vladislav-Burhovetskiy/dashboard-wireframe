@@ -48,10 +48,10 @@ div#rate-top > span {
   padding: 3px 5px;
 }
 
-#rate-exchange p {
+#rate-exchange-result {
   align-self: end;
-  font-size: 1.2rem;
-  padding: 3px 0;
+  font-size: 1rem;
+  padding: 2px 0;
   padding-bottom: 0;
 }
 

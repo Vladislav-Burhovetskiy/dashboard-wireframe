@@ -46,6 +46,7 @@ div#rate-top > span {
 
 #rate-exchange > button {
   padding: 3px 5px;
+  cursor: pointer;
 }
 
 #rate-exchange-result {

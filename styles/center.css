@@ -68,15 +68,3 @@ form:hover {
   width: 30px;
   height: 30px;
 }
-
-input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url("/dashboard-wireframe/assets/Orion_cancel.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  cursor: pointer;
-}

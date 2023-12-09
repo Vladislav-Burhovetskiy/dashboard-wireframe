@@ -13,8 +13,9 @@ navigator.geolocation.getCurrentPosition((position) => {
       document.getElementById("weather").innerHTML = `
                 <img src=${iconUrl} />
                 <p class="weather-temp">${Math.round(data.main.temp)}º</p>
-                <p class="weather-city">Dobropillia</p>
-            `;
+                <p class="weather-city">${data.name}</p>
+                `;
+                // <p class="weather-city">Dobropillia</p>
     })
     .catch((err) => console.error(err));
 });
